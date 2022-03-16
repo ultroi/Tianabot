@@ -82,33 +82,41 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hᴇʟʟᴏ {} * [!]({})
-───────────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-× *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
-───────────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-───────────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tᴇᴀᴍ Tɪᴀɴᴀ!*
-───────────────────────"""
+────「 [{}](https://telegra.ph/file/438ea17e93f284ae9fe9d.jpg) 」────
+*Pika-Pika! {},*
+*I am an Anime themed advance group management bot with a lot of awesome Features, Pika-Pika*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• *Uptime:* `{}`
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• `{}` *users, across* `{}` *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+*Try The Help Buttons Below To Know My Abilities And Attacks* ××
+"""
+
+GROUP_START_TEXT = """
+I'm awake already!
+Haven't slept since: {}
+"""
 
 buttons = [
     [
-        InlineKeyboardButton(text="❓ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙 𝙃𝙚𝙡𝙥 ❗️", callback_data="tiana_"),
+        InlineKeyboardButton(
+            text="💖 ADD ME IN YOUR GROUP",url="t.me/PikachuRobo_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="👩‍💻 𝙄𝙣𝙛𝙤", callback_data="about_"),
-        InlineKeyboardButton(text="𝘿𝙤𝙣𝙖𝙩𝙚 💰", url="https://t.me/PrincexDonateBot"),
+        InlineKeyboardButton(
+            text="⚙️ Support", url=f"https://telegram.dog/PikachuHelpSupport"),
+        InlineKeyboardButton(
+            text="🎉 Updates", url="https://telegram.dog/PikachuUpdate"),
+        InlineKeyboardButton(
+            text="📮 Logs", url="https://telegram.dog/PiKa_HaMMer_LoGs"),
+              
     ],
-   [
-        InlineKeyboardButton(text="📇 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"http://t.me/{UPDATE_CHANNEL}"),
-        InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🫂", url=f"https://t.me/{SUPPORT_CHAT}"),
+    [                    
+        InlineKeyboardButton(
+            text="🔐 Help", callback_data="help_back"
+        ),
     ],
-    [  
-        InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-    ], 
-    
 ]
 
 TIANA_IMG = f"{START_IMG}"
