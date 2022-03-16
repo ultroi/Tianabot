@@ -244,15 +244,15 @@ def start(update: Update, context: CallbackContext):
           first_name = update.effective_user.first_name
           update.effective_message.reply_photo(
                 TIANA_IMG, caption="""*Hᴇʟʟᴏ {} !*
-───────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-× *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
-───────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-───────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tᴇᴀᴍ Tɪᴀɴᴀ*
-───────────────────""".format(
+────「 [{}](https://telegra.ph/file/438ea17e93f284ae9fe9d.jpg) 」────
+*Pika-Pika! {},*
+*I am an Anime themed advance group management bot with a lot of awesome Features, Pika-Pika*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• *Uptime:* {}
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• {} *users, across* {} *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+*Try The Help Buttons Below To Know My Abilities And Attacks* ××"".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
