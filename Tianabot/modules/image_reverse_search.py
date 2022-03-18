@@ -11,14 +11,14 @@ from telegram import InputMediaPhoto, TelegramError
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from TianaRobot import dispatcher
+from TianaRobot.modules.disable import DisableAbleCommandHandler
 
 opener = urllib.request.build_opener()
 useragent = 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36'
 opener.addheaders = [('User-agent', useragent)]
 
-@run_async
+
 def reverse(update: Update, context:CallbackContext):
     if os.path.isfile("okgoogle.png"):
         os.remove("okgoogle.png")
@@ -300,14 +300,8 @@ async def scam(results, lim):
     return imglinks
 
 
-__help__ = f"""
-*Commands:* 
-
-• /reverse: Does a reverse image search of the media which it was replied to.
-• /grs: Same as reverse
-
-Reports bugs at @IGRISBOTSUPPORT
-"""
+ 
+ 
 
 __mod_name__ = "Image Search"
 
