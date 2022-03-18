@@ -1,7 +1,4 @@
-from Tianabot import DEV_USERS, DRAGONS, DEMONS
-from telegram import Message
-from telegram.ext import BaseFilter
-
+ 
 
 class CustomFilters(object):
     class _Supporters(BaseFilter):
@@ -45,3 +42,4 @@ class CustomFilters(object):
             )
 
     has_text = _HasText()
+   
