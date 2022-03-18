@@ -82,8 +82,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──────[{}]──────
-*Pika-Pika! {},*
+──────[✨{}✨]──────
+*Pika-Pika!,*
 *I am an Anime themed advance group management bot with a lot of awesome Features, Pika-Pika*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* {}
