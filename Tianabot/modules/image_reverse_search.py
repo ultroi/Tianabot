@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from telegram import InputMediaPhoto, TelegramError
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
-
+from Tianabot.events import register
 from Tianabot import dispatcher
 from Tianabot.modules.disable import DisableAbleCommandHandler
 
