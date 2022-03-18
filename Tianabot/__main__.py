@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/438ea17e93f284ae9fe9d.jpg) 」────
+──────[{}]──────
 *Pika-Pika! {},*
 *I am an Anime themed advance group management bot with a lot of awesome Features, Pika-Pika*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
